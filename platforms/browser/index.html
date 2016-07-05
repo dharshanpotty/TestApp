@@ -7,12 +7,11 @@
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <title>INFY Task</title>
     <script>
-    $(function () {
-        $("#divId").load("create.html");
-    });
-    $("p").click(function () {
-        load("create.html");
-    });
+        $(document).ready(function () {
+            $('#submit1').click(function () {
+                window.open("create.html");
+            });
+        });
     </script>
 </head>
 <body>
@@ -23,6 +22,6 @@
             <div id="divId" style="display:none;"></div>
         </div>
     </div>-->
-    <p>Create the task....</p>
+    <button id="submit1">Create</button>
 </body>
 </html>

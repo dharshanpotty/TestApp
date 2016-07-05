@@ -10,16 +10,19 @@
     $(function () {
         $("#divId").load("create.html");
     });
+    $("p").click(function () {
+        load("create.html");
+    });
     </script>
 </head>
 <body>
-    <div data-role="main" class="ui-content">
+    <!--<div data-role="main" class="ui-content">
         <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Create Task</a>
 
         <div data-role="popup" id="myPopup">
-            <p>Opening Create Task......</p>
             <div id="divId" style="display:none;"></div>
         </div>
-    </div>
+    </div>-->
+    <p>Create the task....</p>
 </body>
 </html>

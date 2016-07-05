@@ -6,13 +6,19 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <title>INFY Task</title>
+    <script>
+    $(function () {
+        $("#divId").load("create.html");
+    });
+    </script>
 </head>
 <body>
     <div data-role="main" class="ui-content">
-        <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Show Popup</a>
+        <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">Create Task</a>
 
         <div data-role="popup" id="myPopup">
-            <p>This is a simple popup.</p>
+            <p>Opening Create Task......</p>
+            <div id="divId" style="display:none;"></div>
         </div>
     </div>
 </body>
